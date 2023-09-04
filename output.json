@@ -1,1 +1,574 @@
-WwogIHsKICAgICJvYmpfaWQiOiAiSy0xNjAxIiwKICAgICJ0aW1lIjogIjA0LjA5LjIwMjMsIDA5OjA3OjU5IiwKICAgICJkYXRhIjogWwogICAgICB7CiAgICAgICAgIngiOiA1OC4wOTg5NDcKICAgICAgfSwKICAgICAgewogICAgICAgICJ5IjogMzguNzE1MDkKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDAKICB9LAogIHsKICAgICJvYmpfaWQiOiAi0JjQvdC20LXQvdC10YAg0KjRg9GC0LrQvtCy0LAiLAogICAgInRpbWUiOiAiMDQuMDkuMjAyMywgMDk6MTQ6NDAiLAogICAgImRhdGEiOiBbCiAgICAgIHsKICAgICAgICAieCI6IDU5LjEyNDA5MwogICAgICB9LAogICAgICB7CiAgICAgICAgInkiOiAzOC4xODE0MjMKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDEyCiAgfSwKICB7CiAgICAib2JqX2lkIjogItCe0LrRgdC60LjQuS0xNSIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNzo0MCIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTUuODQyMzMzCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDQ4LjI5MjgzMwogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogNwogIH0sCiAgewogICAgIm9ial9pZCI6ICLQoNCiLTM0OSIsCiAgICAidGltZSI6ICIxOS4wNi4yMDIzLCAxODo0MTowMCIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTUuMDc4NDY2CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM4Ljg5MTkzMwogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogMAogIH0sCiAgewogICAgIm9ial9pZCI6ICLQmtC+0LvQvtC80LXQvdGB0LrQuNC5LTgwMSIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNDo0MCIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTcuODYwMgogICAgICB9LAogICAgICB7CiAgICAgICAgInkiOiAzOC40OTc1MzMKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDcKICB9LAogIHsKICAgICJvYmpfaWQiOiAi0KDQoi0zNTAiLAogICAgInRpbWUiOiAiMDQuMDkuMjAyMywgMDk6MTc6NDAiLAogICAgImRhdGEiOiBbCiAgICAgIHsKICAgICAgICAieCI6IDU2LjY3NDg1CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDQzLjQ0MQogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogMAogIH0sCiAgewogICAgIm9ial9pZCI6ICLQkdCw0YDRgdGD0LrQvtCyIiwKICAgICJ0aW1lIjogIjA0LjA5LjIwMjMsIDA5OjE3OjQwIiwKICAgICJkYXRhIjogWwogICAgICB7CiAgICAgICAgIngiOiA1Ni4wNDM5ODMKICAgICAgfSwKICAgICAgewogICAgICAgICJ5IjogNDQuNjQwNQogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogNQogIH0sCiAgewogICAgIm9ial9pZCI6ICLQmtC+0LvQvtC80LXQvdGB0LrQuNC5LTgwMyIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNzo0MCIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTYuMTYyNjMzCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM3LjUxMDM1CiAgICAgIH0KICAgIF0sCiAgICAic3BlZWQiOiAwCiAgfSwKICB7CiAgICAib2JqX2lkIjogItCc0L7RgdC60LLQsC0xMDgiLAogICAgInRpbWUiOiAiMTguMTEuMjAyMiwgMjI6MDU6MjEiLAogICAgImRhdGEiOiBbCiAgICAgIHsKICAgICAgICAieCI6IDU1LjA3MzQ1CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM4Ljg1NTAyMwogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogMAogIH0sCiAgewogICAgIm9ial9pZCI6ICLQoNCiLTMxOSIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNDo0MCIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTUuMDgzMTY2CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM4Ljk4MDgKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDUKICB9LAogIHsKICAgICJvYmpfaWQiOiAi0J7QutGB0LrQuNC5LTYzIiwKICAgICJ0aW1lIjogIjA0LjA5LjIwMjMsIDA5OjE0OjQwIiwKICAgICJkYXRhIjogWwogICAgICB7CiAgICAgICAgIngiOiA1Ny4xODA3ODMKICAgICAgfSwKICAgICAgewogICAgICAgICJ5IjogNDMuMTM1NTY2CiAgICAgIH0KICAgIF0sCiAgICAic3BlZWQiOiA3CiAgfSwKICB7CiAgICAib2JqX2lkIjogItCg0KItNDIzIiwKICAgICJ0aW1lIjogIjA0LjA5LjIwMjMsIDA5OjE3OjQwIiwKICAgICJkYXRhIjogWwogICAgICB7CiAgICAgICAgIngiOiA1NS4yODc1MzMKICAgICAgfSwKICAgICAgewogICAgICAgICJ5IjogMzguNzE4MQogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogNQogIH0sCiAgewogICAgIm9ial9pZCI6ICLQki7QqNCw0YDQsNC/0L7QsiIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNDo0MCIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTQuODcwMzMzCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM5LjM5MTE2NgogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogNQogIH0sCiAgewogICAgIm9ial9pZCI6ICLQmtC+0LvQvtC80LXQvdGB0LrQuNC5LTgwMiIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNzo0MCIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTUuOTc2MjgzCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM3LjUzNDk2NgogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogNQogIH0sCiAgewogICAgIm9ial9pZCI6ICLQoNCiLTM2NSIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNzo0MCIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTQuNzQ5NDMzCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM5LjY4NTAxNgogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogMAogIH0sCiAgewogICAgIm9ial9pZCI6IDEwNzk5OCwKICAgICJ0aW1lIjogIjA4LjA4LjIwMjIsIDA1OjE0OjEwIiwKICAgICJkYXRhIjogWwogICAgICB7CiAgICAgICAgIngiOiA1NS4wNzUwNTMKICAgICAgfSwKICAgICAgewogICAgICAgICJ5IjogMzguODg3ODkKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDAKICB9LAogIHsKICAgICJvYmpfaWQiOiAi0J7QmtCQLTE1IiwKICAgICJ0aW1lIjogIjA0LjA5LjIwMjMsIDA5OjE3OjM0IiwKICAgICJkYXRhIjogWwogICAgICB7CiAgICAgICAgIngiOiA1NC45MTg2NzkKICAgICAgfSwKICAgICAgewogICAgICAgICJ5IjogMzkuMjczMzM4CiAgICAgIH0KICAgIF0sCiAgICAic3BlZWQiOiAwCiAgfSwKICB7CiAgICAib2JqX2lkIjogItCf0YPRgtC40LLQu9GMIiwKICAgICJ0aW1lIjogIjA0LjA5LjIwMjMsIDA5OjE3OjA5IiwKICAgICJkYXRhIjogWwogICAgICB7CiAgICAgICAgIngiOiA1NS41NzU0NgogICAgICB9LAogICAgICB7CiAgICAgICAgInkiOiAzOC4wNzg4MzcKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDYKICB9LAogIHsKICAgICJvYmpfaWQiOiAi0J/QtdGC0YDQsNC30LDQstC+0LTRgdC6IiwKICAgICJ0aW1lIjogIjA0LjA5LjIwMjMsIDA5OjE0OjA4IiwKICAgICJkYXRhIjogWwogICAgICB7CiAgICAgICAgIngiOiA1Ni40NDkzMDkKICAgICAgfSwKICAgICAgewogICAgICAgICJ5IjogMzcuNDMxOTI1CiAgICAgIH0KICAgIF0sCiAgICAic3BlZWQiOiA3CiAgfSwKICB7CiAgICAib2JqX2lkIjogItCa0L7Qu9C+0LzQtdC90YHQutC40LktMTUwMSIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNDo0MSIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTYuMzM2NTU5CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDQ0LjA0NTQ5CiAgICAgIH0KICAgIF0sCiAgICAic3BlZWQiOiAwCiAgfSwKICB7CiAgICAib2JqX2lkIjogItCTLtCj0YDQsNC70LXQsiIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNToxMCIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTUuMDg0NDc2CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM5LjA4NjMzOAogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogOQogIH0sCiAgewogICAgIm9ial9pZCI6ICLQn9GD0LvQutC+0LLQviIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNzoyNiIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTQuODg3NTgyCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM5LjQ4ODM4NAogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogMAogIH0sCiAgewogICAgIm9ial9pZCI6ICLQoNCiLTMxNiIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNzoyMiIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTUuMDc0Njk2CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM4Ljg0OTcwNQogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogOQogIH0sCiAgewogICAgIm9ial9pZCI6ICLQoNCiLTM5MiIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNTowOSIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTUuMDgxMTY4CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM4LjgzNjQ4MwogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogNQogIH0sCiAgewogICAgIm9ial9pZCI6ICLQmtC+0LvQvtC80LXQvdGB0LrQuNC5LTgwNCIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNzozOSIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTcuMDQ2NDg3CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDQzLjEzOTE4NAogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogOAogIH0sCiAgewogICAgIm9ial9pZCI6ICLQmtC+0LvQvtC80LXQvdGB0LrQuNC5LTgwNSIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNzozMSIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTcuNDI1MTM2CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM4LjEzNTM3NgogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogOAogIH0sCiAgewogICAgIm9ial9pZCI6ICLQoNCiLTM2MyIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNzoxMyIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTQuOTM2MDE2CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM5LjI3MTQyNAogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogNQogIH0sCiAgewogICAgIm9ial9pZCI6ICLQoNCiLTM2OSIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNTowNCIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTYuMDE1MzU4CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM3LjYyNDk0MQogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogNwogIH0sCiAgewogICAgIm9ial9pZCI6ICLQoNCiLTMxMiIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNzoyOCIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTQuOTQ5NDA1CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM5LjI1NDU5NgogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogMAogIH0sCiAgewogICAgIm9ial9pZCI6ICLQn9C10YfQvtGA0LAiLAogICAgInRpbWUiOiAiMDQuMDkuMjAyMywgMDk6MTU6MTAiLAogICAgImRhdGEiOiBbCiAgICAgIHsKICAgICAgICAieCI6IDU1LjA4MDI2OQogICAgICB9LAogICAgICB7CiAgICAgICAgInkiOiAzOS4wODYxMTkKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDAKICB9LAogIHsKICAgICJvYmpfaWQiOiAi0KDQoi0zMjAiLAogICAgInRpbWUiOiAiMjAuMDYuMjAyMywgMTI6MTI6MzUiLAogICAgImRhdGEiOiBbCiAgICAgIHsKICAgICAgICAieCI6IDU1LjA3ODYwNwogICAgICB9LAogICAgICB7CiAgICAgICAgInkiOiAzOC44OTIyMjYKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDAKICB9LAogIHsKICAgICJvYmpfaWQiOiAi0Jwu0KHQsNCy0LjQvSIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNzowMSIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTUuNDE1MDM5CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM4LjUwMDc3OAogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogNwogIH0sCiAgewogICAgIm9ial9pZCI6ICLQkdCi0JwtNTMwIiwKICAgICJ0aW1lIjogIjA0LjA5LjIwMjMsIDA5OjE3OjM4IiwKICAgICJkYXRhIjogWwogICAgICB7CiAgICAgICAgIngiOiA1NS42MDc5NDkKICAgICAgfSwKICAgICAgewogICAgICAgICJ5IjogMzcuODY4MDU3CiAgICAgIH0KICAgIF0sCiAgICAic3BlZWQiOiAwCiAgfSwKICB7CiAgICAib2JqX2lkIjogItCg0KItNDI1IiwKICAgICJ0aW1lIjogIjA0LjA5LjIwMjMsIDA5OjE0OjUwIiwKICAgICJkYXRhIjogWwogICAgICB7CiAgICAgICAgIngiOiA1NS41NjQ5MzYKICAgICAgfSwKICAgICAgewogICAgICAgICJ5IjogMzguMDMxNTM3CiAgICAgIH0KICAgIF0sCiAgICAic3BlZWQiOiA5CiAgfSwKICB7CiAgICAib2JqX2lkIjogItCQ0L3QvdCwLdCc0LDRgNC40Y8iLAogICAgInRpbWUiOiAiMDMuMDkuMjAyMywgMTQ6MDA6MzkiLAogICAgImRhdGEiOiBbCiAgICAgIHsKICAgICAgICAieCI6IDU1LjA3ODU4NgogICAgICB9LAogICAgICB7CiAgICAgICAgInkiOiAzOC44ODQ5OTQKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDAKICB9LAogIHsKICAgICJvYmpfaWQiOiAi0J7QoS0xMiIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNzoxMSIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTUuMDc5MDkKICAgICAgfSwKICAgICAgewogICAgICAgICJ5IjogMzguODg1MTM4CiAgICAgIH0KICAgIF0sCiAgICAic3BlZWQiOiAwCiAgfSwKICB7CiAgICAib2JqX2lkIjogItCf0L7QtNC+0LvRjNGB0LoiLAogICAgInRpbWUiOiAiMDQuMDkuMjAyMywgMDk6MTc6MzkiLAogICAgImRhdGEiOiBbCiAgICAgIHsKICAgICAgICAieCI6IDU0LjY2MTc1CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAieSI6IDM5Ljc2MTk5OQogICAgICB9CiAgICBdLAogICAgInNwZWVkIjogNwogIH0sCiAgewogICAgIm9ial9pZCI6ICLQoNC10YfQvdC+0LktNzUiLAogICAgInRpbWUiOiAiMDQuMDkuMjAyMywgMDk6MTc6MjUiLAogICAgImRhdGEiOiBbCiAgICAgIHsKICAgICAgICAieCI6IDU2LjE3MTg3MQogICAgICB9LAogICAgICB7CiAgICAgICAgInkiOiAzNy41MTI2NTYKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDAKICB9LAogIHsKICAgICJvYmpfaWQiOiAi0JQu0JTQvtC90YHQutC+0LkiLAogICAgInRpbWUiOiAiMDQuMDkuMjAyMywgMDk6MTQ6NDIiLAogICAgImRhdGEiOiBbCiAgICAgIHsKICAgICAgICAieCI6IDU1LjA3NDIxOQogICAgICB9LAogICAgICB7CiAgICAgICAgInkiOiAzOC44NTYyOTMKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDAKICB9LAogIHsKICAgICJvYmpfaWQiOiAi0KDQoi0zNTgiLAogICAgInRpbWUiOiAiMDQuMDkuMjAyMywgMDk6MTc6MzciLAogICAgImRhdGEiOiBbCiAgICAgIHsKICAgICAgICAieCI6IDU1LjA3OTg4NAogICAgICB9LAogICAgICB7CiAgICAgICAgInkiOiAzOC44ODk5MTkKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDUKICB9LAogIHsKICAgICJvYmpfaWQiOiAi0KHRgtGA0LjQti03IiwKICAgICJ0aW1lIjogIjA0LjA5LjIwMjMsIDA5OjE0OjU0IiwKICAgICJkYXRhIjogWwogICAgICB7CiAgICAgICAgIngiOiA1NS41NTgwNDYKICAgICAgfSwKICAgICAgewogICAgICAgICJ5IjogMzcuOTMxNzMzCiAgICAgIH0KICAgIF0sCiAgICAic3BlZWQiOiAwCiAgfSwKICB7CiAgICAib2JqX2lkIjogItCa0L7Qu9C+0LzQvdCwLTEiLAogICAgInRpbWUiOiAiMDQuMDkuMjAyMywgMDk6MTc6MzIiLAogICAgImRhdGEiOiBbCiAgICAgIHsKICAgICAgICAieCI6IDU3Ljc4MDE2NgogICAgICB9LAogICAgICB7CiAgICAgICAgInkiOiA0MC42NTYwNTgKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDExCiAgfSwKICB7CiAgICAib2JqX2lkIjogItCc0L7RgdC60LLQsC0xMDgiLAogICAgInRpbWUiOiAiMDcuMDguMjAyMywgMTE6NDQ6NTkiLAogICAgImRhdGEiOiBbCiAgICAgIHsKICAgICAgICAieCI6IDU1LjA3ODg4OQogICAgICB9LAogICAgICB7CiAgICAgICAgInkiOiAzOC44OTE5MzYKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDAKICB9LAogIHsKICAgICJvYmpfaWQiOiAi0JHQotCcLTQ4NyIsCiAgICAidGltZSI6ICIwNC4wOS4yMDIzLCAwOToxNTo1MyIsCiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJ4IjogNTYuMzM2MQogICAgICB9LAogICAgICB7CiAgICAgICAgInkiOiA0NC4wNDQyNjEKICAgICAgfQogICAgXSwKICAgICJzcGVlZCI6IDAKICB9Cl0=
+[
+  {
+    "obj_id": "K-1601",
+    "time": "04.09.2023, 09:07:59",
+    "data": [
+      {
+        "x": 58.098947
+      },
+      {
+        "y": 38.71509
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "Инженер Шуткова",
+    "time": "04.09.2023, 09:14:40",
+    "data": [
+      {
+        "x": 59.124093
+      },
+      {
+        "y": 38.181423
+      }
+    ],
+    "speed": 12
+  },
+  {
+    "obj_id": "Окский-15",
+    "time": "04.09.2023, 09:17:40",
+    "data": [
+      {
+        "x": 55.842333
+      },
+      {
+        "y": 48.292833
+      }
+    ],
+    "speed": 7
+  },
+  {
+    "obj_id": "РТ-349",
+    "time": "19.06.2023, 18:41:00",
+    "data": [
+      {
+        "x": 55.078466
+      },
+      {
+        "y": 38.891933
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "Коломенский-801",
+    "time": "04.09.2023, 09:14:40",
+    "data": [
+      {
+        "x": 57.8602
+      },
+      {
+        "y": 38.497533
+      }
+    ],
+    "speed": 7
+  },
+  {
+    "obj_id": "РТ-350",
+    "time": "04.09.2023, 09:17:40",
+    "data": [
+      {
+        "x": 56.67485
+      },
+      {
+        "y": 43.441
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "Барсуков",
+    "time": "04.09.2023, 09:17:40",
+    "data": [
+      {
+        "x": 56.043983
+      },
+      {
+        "y": 44.6405
+      }
+    ],
+    "speed": 5
+  },
+  {
+    "obj_id": "Коломенский-803",
+    "time": "04.09.2023, 09:17:40",
+    "data": [
+      {
+        "x": 56.162633
+      },
+      {
+        "y": 37.51035
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "Москва-108",
+    "time": "18.11.2022, 22:05:21",
+    "data": [
+      {
+        "x": 55.07345
+      },
+      {
+        "y": 38.855023
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "РТ-319",
+    "time": "04.09.2023, 09:14:40",
+    "data": [
+      {
+        "x": 55.083166
+      },
+      {
+        "y": 38.9808
+      }
+    ],
+    "speed": 5
+  },
+  {
+    "obj_id": "Окский-63",
+    "time": "04.09.2023, 09:14:40",
+    "data": [
+      {
+        "x": 57.180783
+      },
+      {
+        "y": 43.135566
+      }
+    ],
+    "speed": 7
+  },
+  {
+    "obj_id": "РТ-423",
+    "time": "04.09.2023, 09:17:40",
+    "data": [
+      {
+        "x": 55.287533
+      },
+      {
+        "y": 38.7181
+      }
+    ],
+    "speed": 5
+  },
+  {
+    "obj_id": "В.Шарапов",
+    "time": "04.09.2023, 09:14:40",
+    "data": [
+      {
+        "x": 54.870333
+      },
+      {
+        "y": 39.391166
+      }
+    ],
+    "speed": 5
+  },
+  {
+    "obj_id": "Коломенский-802",
+    "time": "04.09.2023, 09:17:40",
+    "data": [
+      {
+        "x": 55.976283
+      },
+      {
+        "y": 37.534966
+      }
+    ],
+    "speed": 5
+  },
+  {
+    "obj_id": "РТ-365",
+    "time": "04.09.2023, 09:17:40",
+    "data": [
+      {
+        "x": 54.749433
+      },
+      {
+        "y": 39.685016
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": 107998,
+    "time": "08.08.2022, 05:14:10",
+    "data": [
+      {
+        "x": 55.075053
+      },
+      {
+        "y": 38.88789
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "ОКА-15",
+    "time": "04.09.2023, 09:17:34",
+    "data": [
+      {
+        "x": 54.918679
+      },
+      {
+        "y": 39.273338
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "Путивль",
+    "time": "04.09.2023, 09:17:09",
+    "data": [
+      {
+        "x": 55.57546
+      },
+      {
+        "y": 38.078837
+      }
+    ],
+    "speed": 6
+  },
+  {
+    "obj_id": "Петразаводск",
+    "time": "04.09.2023, 09:14:08",
+    "data": [
+      {
+        "x": 56.449309
+      },
+      {
+        "y": 37.431925
+      }
+    ],
+    "speed": 7
+  },
+  {
+    "obj_id": "Коломенский-1501",
+    "time": "04.09.2023, 09:14:41",
+    "data": [
+      {
+        "x": 56.336559
+      },
+      {
+        "y": 44.04549
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "Г.Уралев",
+    "time": "04.09.2023, 09:15:10",
+    "data": [
+      {
+        "x": 55.084476
+      },
+      {
+        "y": 39.086338
+      }
+    ],
+    "speed": 9
+  },
+  {
+    "obj_id": "Пулково",
+    "time": "04.09.2023, 09:17:26",
+    "data": [
+      {
+        "x": 54.887582
+      },
+      {
+        "y": 39.488384
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "РТ-316",
+    "time": "04.09.2023, 09:17:22",
+    "data": [
+      {
+        "x": 55.074696
+      },
+      {
+        "y": 38.849705
+      }
+    ],
+    "speed": 9
+  },
+  {
+    "obj_id": "РТ-392",
+    "time": "04.09.2023, 09:15:09",
+    "data": [
+      {
+        "x": 55.081168
+      },
+      {
+        "y": 38.836483
+      }
+    ],
+    "speed": 5
+  },
+  {
+    "obj_id": "Коломенский-804",
+    "time": "04.09.2023, 09:17:39",
+    "data": [
+      {
+        "x": 57.046487
+      },
+      {
+        "y": 43.139184
+      }
+    ],
+    "speed": 8
+  },
+  {
+    "obj_id": "Коломенский-805",
+    "time": "04.09.2023, 09:17:31",
+    "data": [
+      {
+        "x": 57.425136
+      },
+      {
+        "y": 38.135376
+      }
+    ],
+    "speed": 8
+  },
+  {
+    "obj_id": "РТ-363",
+    "time": "04.09.2023, 09:17:13",
+    "data": [
+      {
+        "x": 54.936016
+      },
+      {
+        "y": 39.271424
+      }
+    ],
+    "speed": 5
+  },
+  {
+    "obj_id": "РТ-369",
+    "time": "04.09.2023, 09:15:04",
+    "data": [
+      {
+        "x": 56.015358
+      },
+      {
+        "y": 37.624941
+      }
+    ],
+    "speed": 7
+  },
+  {
+    "obj_id": "РТ-312",
+    "time": "04.09.2023, 09:17:28",
+    "data": [
+      {
+        "x": 54.949405
+      },
+      {
+        "y": 39.254596
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "Печора",
+    "time": "04.09.2023, 09:15:10",
+    "data": [
+      {
+        "x": 55.080269
+      },
+      {
+        "y": 39.086119
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "РТ-320",
+    "time": "20.06.2023, 12:12:35",
+    "data": [
+      {
+        "x": 55.078607
+      },
+      {
+        "y": 38.892226
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "М.Савин",
+    "time": "04.09.2023, 09:17:01",
+    "data": [
+      {
+        "x": 55.415039
+      },
+      {
+        "y": 38.500778
+      }
+    ],
+    "speed": 7
+  },
+  {
+    "obj_id": "БТМ-530",
+    "time": "04.09.2023, 09:17:38",
+    "data": [
+      {
+        "x": 55.607949
+      },
+      {
+        "y": 37.868057
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "РТ-425",
+    "time": "04.09.2023, 09:14:50",
+    "data": [
+      {
+        "x": 55.564936
+      },
+      {
+        "y": 38.031537
+      }
+    ],
+    "speed": 9
+  },
+  {
+    "obj_id": "Анна-Мария",
+    "time": "03.09.2023, 14:00:39",
+    "data": [
+      {
+        "x": 55.078586
+      },
+      {
+        "y": 38.884994
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "ОС-12",
+    "time": "04.09.2023, 09:17:11",
+    "data": [
+      {
+        "x": 55.07909
+      },
+      {
+        "y": 38.885138
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "Подольск",
+    "time": "04.09.2023, 09:17:39",
+    "data": [
+      {
+        "x": 54.66175
+      },
+      {
+        "y": 39.761999
+      }
+    ],
+    "speed": 7
+  },
+  {
+    "obj_id": "Речной-75",
+    "time": "04.09.2023, 09:17:25",
+    "data": [
+      {
+        "x": 56.171871
+      },
+      {
+        "y": 37.512656
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "Д.Донской",
+    "time": "04.09.2023, 09:14:42",
+    "data": [
+      {
+        "x": 55.074219
+      },
+      {
+        "y": 38.856293
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "РТ-358",
+    "time": "04.09.2023, 09:17:37",
+    "data": [
+      {
+        "x": 55.079884
+      },
+      {
+        "y": 38.889919
+      }
+    ],
+    "speed": 5
+  },
+  {
+    "obj_id": "Стриж-7",
+    "time": "04.09.2023, 09:14:54",
+    "data": [
+      {
+        "x": 55.558046
+      },
+      {
+        "y": 37.931733
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "Коломна-1",
+    "time": "04.09.2023, 09:17:32",
+    "data": [
+      {
+        "x": 57.780166
+      },
+      {
+        "y": 40.656058
+      }
+    ],
+    "speed": 11
+  },
+  {
+    "obj_id": "Москва-108",
+    "time": "07.08.2023, 11:44:59",
+    "data": [
+      {
+        "x": 55.078889
+      },
+      {
+        "y": 38.891936
+      }
+    ],
+    "speed": 0
+  },
+  {
+    "obj_id": "БТМ-487",
+    "time": "04.09.2023, 09:15:53",
+    "data": [
+      {
+        "x": 56.3361
+      },
+      {
+        "y": 44.044261
+      }
+    ],
+    "speed": 0
+  }
+]
